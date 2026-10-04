@@ -1,0 +1,16 @@
+{
+  "name": "Character",
+  "type": "object",
+  "properties": {
+    "codename": { "type": "string", "description": "The operative's chosen callsign within the Neon Vigil." },
+    "archetype": { "type": "string", "enum": ["Signalblade", "Veilweaver", "Pulsewright", "Nullseer", "Chromeveil"], "description": "The operative's class within the Neon Vigil IWW." },
+    "vigil_name": { "type": "string", "description": "The true name whispered to the Hexa sigil." },
+    "vigor": { "type": "number", "description": "Physical resilience and raw endurance of the shell." },
+    "cognition": { "type": "number", "description": "Processing clarity and pattern decryption." },
+    "pulse": { "type": "number", "description": "Resonance with the living signal and emotional bandwidth." },
+    "veil": { "type": "number", "description": "Affinity for the unseen and the between." },
+    "signal": { "type": "number", "description": "Connection strength to the Hexa gateway network." },
+    "creed": { "type": "string", "description": "A short oath or doctrine the operative swears to the Vigil." }
+  },
+  "required": ["codename", "archetype", "vigor", "cognition", "pulse", "veil", "signal"]
+}

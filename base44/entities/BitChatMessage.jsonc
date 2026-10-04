@@ -1,0 +1,9 @@
+{
+  "name": "BitChatMessage",
+  "type": "object",
+  "properties": {
+    "content": { "type": "string", "description": "The text of the message exchanged over BitChat." },
+    "sender": { "type": "string", "enum": ["user", "hexa"], "description": "Who authored the message: the operative or the Hexa persona." }
+  },
+  "required": ["content", "sender"]
+}
