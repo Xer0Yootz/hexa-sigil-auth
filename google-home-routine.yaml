@@ -1,0 +1,13 @@
+metadata:
+  name: Hexa Sigil Boot Sequence
+  description: Silently triggers the node initialization and casts to the primary display.
+automations:
+  starters:
+    - type: assistant.command.OkGoogle
+      eventData: query
+      query: "Initiate Hexa Sigil"
+  actions:
+    - type: device.command.OnOff
+      devices:
+        - Hexa Gateway Node - Studio
+      on: true
