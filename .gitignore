@@ -1,8 +1,5 @@
 node_modules
+dist
 .env
 .env.local
-dist
-data/*.db
 .DS_Store
-npm-debug.log*
-.replit
