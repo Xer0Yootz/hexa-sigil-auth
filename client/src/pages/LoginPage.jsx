@@ -65,7 +65,7 @@ export default function LoginPage({ onUserChange }) {
 
         <form onSubmit={handleSubmit} className="auth-form">
           <label className="field-label">
-            Email
+            Username:
             <input
               type="email"
               name="email"
